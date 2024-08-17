@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVK - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_svk.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+     -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/Image_Souvik.jpeg"
+              alt="Souvik Karmakar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Souvik Karmakar">Souvik Karmakar</h1>
+
+            <p class="title">Full Stack Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="separator"></div>
+        <div class="sidebar-info_more">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/souvik2k21"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/souvik--karmakar/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/optimistic_svk_/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/SVK.raj2k18/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:rajkarmakar892@gmail.com" class="contact-link"
+                  >rajkarmakar892@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+919547015833" class="contact-link"
+                  >+91 9547015833</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2002-07-21">21 July, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Kolkata, India</address>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Certifications</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hi, I'm Souvik Karmakar, a passionate full-stack developer from
+              Kolkata, India. With a strong foundation in Java, Python and
+              machine learning, I specialize in creating responsive and
+              high-performance web applications. Currently, I’m pursuing a
+              B.Tech in Information Technology at Techno International New Town,
+              where I’ve honed my skills in various domains such as Data
+              Structures & Algorithms, Object-Oriented Programming, Operating
+              Systems and Computer Networks.
+            </p>
+
+            <p>
+              My journey in tech has been fueled by my love for problem-solving
+              and innovation. I've successfully designed and deployed projects
+              like an Email/SMS Spam Detection System and a Multimodal Phishing
+              Domain Detection System, leveraging my expertise in backend
+              development with FastAPI and frontend development using HTML, CSS,
+              and JavaScript. I’ve also contributed to mental health awareness
+              through a dedicated website promoting emotional well-being. Beyond
+              coding, I actively participate in coding competitions and
+              hackathons, always eager to learn and explore the latest
+              advancements in AI and machine learning. My drive to continuously
+              improve and take on new challenges makes me committed to
+              delivering impactful and innovative solutions.
+            </p>
+          </section>
+
+          <!--
+          - service
+         -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Design</h4>
+                  <p class="service-item-text">
+                    Creating visually appealing and user-friendly websites with
+                    a focus on responsive design and seamless user experience.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    Developing dynamic and robust web applications using modern
+                    frameworks, ensuring functionality and performance across
+                    all devices.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="AI ML icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI/ML</h4>
+                  <p class="service-item-text">
+                    Implementing AI and machine learning algorithms to build
+                    intelligent systems that can analyze data, make predictions,
+                    and automate tasks.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+  - #RESUME
+-->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <div class="cv-download-wrapper">
+            <a href="/assets/CV_SVK.pdf" download class="cv-download-btn"
+              >Download My CV</a
+            >
+          </div>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Techno International New Town, Kolkata
+                </h4>
+
+                <span>2021 — 2025</span>
+
+                <p class="timeline-text">
+                  Pursuing B.Tech in Information Technology with a CGPA of 8.5.
+                  Focused on developing skills in full-stack development,
+                  machine learning, and problem-solving through various academic
+                  and personal projects.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  RKM High School, Midnapore, WBCHSE
+                </h4>
+
+                <span>2018 — 2020</span>
+
+                <p class="timeline-text">
+                  Completed 12th grade in Science with an 85% score, building a
+                  strong foundation in subjects like Physics, Chemistry,
+                  Mathematics, and Computer Science.
+                </p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Midnapore Town School, WBBSE
+                </h4>
+
+                <span>2017 — 2018</span>
+
+                <p class="timeline-text">
+                  Completed 10th grade with a 73% score, demonstrating a keen
+                  interest in technology and computer programming.
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Developer Intern at CodeClause
+                </h4>
+
+                <span>July 2023 — September 2023</span>
+
+                <p class="timeline-text">
+                  Worked remotely on multiple web projects, focusing on design,
+                  development, and deployment. Ensured high performance and
+                  responsiveness of web applications, gaining hands-on
+                  experience in full-stack development.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!--
+          - skills
+        -->
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/java_logo.png"
+                    alt="Java Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">Java</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/python_logo.png"
+                    alt="Python Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">Python</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/html_css_js_logo.png"
+                    alt="HTML/CSS/JS Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">HTML/CSS/JavaScript</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/react_logo.png"
+                    alt="React JS Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">React JS</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/node js_logo.png"
+                    alt="Node JS Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">Node JS</h5>
+                  <data value="40">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/MySQL_logo.png"
+                    alt="SQL Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">MySQL</h5>
+                  <data value="40">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <img
+                    src="/assets/images/AIML_logo.png"
+                    alt="Machine Learning Logo"
+                    class="skill-logo"
+                  />
+                  <h5 class="h5">Machine Learning</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PROJECTS
+      -->
+
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Apps</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>ML Projects</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Games</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Apps</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>ML Projects</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Games</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ml projects"
+              >
+                <a
+                  href="https://github.com/souvik2k21/spam-detection-system"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/assets/images/spam-gif.gif"
+                      alt="Email/SMS Spam Detection System"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Email/SMS Spam Detection System</h3>
+                  <p class="project-category">ML Projects</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ml projects"
+              >
+                <a
+                  href="https://github.com/souvik2k21/phishing-detection"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/phish-gif.gif"
+                      alt="Multimodal Phishing Domain Detection System"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Multimodal Phishing Domain Detection System
+                  </h3>
+                  <p class="project-category">ML Projects</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web apps"
+              >
+                <a
+                  href="https://github.com/souvik2k21/mentalhealthwellness"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Mental_SS.png"
+                      alt="Mental Health Wellness Website"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Mental Health Wellness Website</h3>
+                  <p class="project-category">Web Apps</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games"
+              >
+                <a
+                  href="https://github.com/souvik2k21/Tic-Tac-Toe-Game"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/tic_tac_SS.png"
+                      alt="Tic-Tac-Toe Game"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Tic-Tac-Toe Game</h3>
+                  <p class="project-category">Games</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web apps"
+              >
+                <a
+                  href="https://github.com/souvik2k21/Timer-and-Stopwatch"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/timer_SS.png"
+                      alt="Timer-and-Stopwatch"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Timer-and-Stopwatch</h3>
+                  <p class="project-category">Web Apps</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web apps"
+              >
+                <a
+                  href="https://github.com/souvik2k21/To-Do-List"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/todo_SS.png"
+                      alt="To-Do-List"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">To-Do-List</h3>
+                  <p class="project-category">Web Apps</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CERTIFICATIONS
+        -->
+
+        <!-- Certifications -->
+        <article class="certifications" data-page="certifications">
+          <header>
+            <h2 class="h2 article-title">Certifications</h2>
+          </header>
+
+          <section class="certificate-section">
+            <ul class="certificate-list">
+              <li class="certificate-item active" data-category="certification">
+                <a
+                  href="https://www.credly.com/badges/97c4337f-3fa2-4210-a712-a76c8abb75f2/public_url"
+                  target="_blank"
+                >
+                  <figure class="certificate-img">
+                    <div class="certificate-item-icon-box">
+                      <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/AWS_SS.png"
+                      alt="AWS Academy Cloud Foundations Badge"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="certificate-title">
+                    AWS Academy Cloud Foundations Badge
+                  </h3>
+                  <p class="certificate-category">Issued: 26 Jul 2024</p>
+                </a>
+              </li>
+
+              <li class="certificate-item active" data-category="certification">
+                <a
+                  href="https://courses.edx.org/certificates/36682b2382d041cc8d8cacc622e4b9e7"
+                  target="_blank"
+                >
+                  <figure class="certificate-img">
+                    <div class="certificate-item-icon-box">
+                      <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/DS_SS.png"
+                      alt="Introduction to Data Science"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="certificate-title">
+                    Introduction to Data Science
+                  </h3>
+                  <p class="certificate-category">Issued: 6 May 2022</p>
+                </a>
+              </li>
+
+              <li class="certificate-item active" data-category="certification">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/BQ3U7PYJASBH"
+                  target="_blank"
+                >
+                  <figure class="certificate-img">
+                    <div class="certificate-item-icon-box">
+                      <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/DSA_SS.png"
+                      alt="Data Structures, Coursera"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="certificate-title">Data Structures, Coursera</h3>
+                  <p class="certificate-category">Issued: 19 Feb 2023</p>
+                </a>
+              </li>
+
+              <li class="certificate-item active" data-category="certification">
+                <a
+                  href="https://courses.edx.org/certificates/33a80b04dddb4c13bd6b3858cb351c91"
+                  target="_blank"
+                >
+                  <figure class="certificate-img">
+                    <div class="certificate-item-icon-box">
+                      <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/AI_SS.png"
+                      alt="AI for Everyone: Master the Basics, edX"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="certificate-title">
+                    AI for Everyone: Master the Basics, edX
+                  </h3>
+                  <p class="certificate-category">Issued: 7 May 2024</p>
+                </a>
+              </li>
+
+              <li class="certificate-item active" data-category="certification">
+                <a
+                  href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS31S2370246102162952"
+                  target="_blank"
+                >
+                  <figure class="certificate-img">
+                    <div class="certificate-item-icon-box">
+                      <ion-icon name="document-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/NPTEL_SS.png"
+                      alt="AI for Everyone: Master the Basics, edX"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="certificate-title">
+                    The Joy of Computing using Python, NPTEL
+                  </h3>
+                  <p class="certificate-category">Issued: 5 Apr 2022</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14736.230059979574!2d88.4700674!3d22.5769521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753ee59ff555%3A0x16b3b1d0ef961845!2sStreet%20Number%20140%2C%20BA%20Block(Newtown)%2C%20Action%20Area%201B%2C%20Newtown%2C%20New%20Town%2C%20West%20Bengal%20700156!5e0!3m2!1sen!2sin!4v1723407154814!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
